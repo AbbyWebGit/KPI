@@ -1,0 +1,258 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+center,
+u,
+b,
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-style: normal;
+    font-size: 100%;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+
+:focus {
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    height: 0px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+    text-decoration: none;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    resize: none;
+    *font-size: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #FFF;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *+height: 1%;
+}
+
+
+/*页面开头部分*/
+
+.topKpi {
+    background: url(../../images/pat.png);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.topKpi .titleFirst {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.topKpi .titleSecond {
+    font-size: 20px;
+    opacity: 0.7;
+    padding: 0.6em 0 1em 0.1em;
+}
+
+.topKpi .targetCompletion {
+    max-width: 960px;
+    height: 13em;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.topKpi .targetHits {
+    border: 1px solid rgba(31, 108, 150, 0.5);
+    width: 46%;
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.topKpi .targetHits p {
+    font-size: 20px;
+    color: #758395;
+    display: block;
+    margin: 35px 0;
+    text-align: left;
+}
+
+.topKpi span.checkDetails {
+    display: block;
+}
+
+.topKpi .targetCan {
+    width: 100px;
+    display: inline-block;
+}
+
+.topKpi .leadsCan {
+    width: 100px;
+    display: inline-block;
+}
+
+.topKpi .targetHits .tarSpeText {
+    color: #2cabed;
+}
+
+.topKpi .leadsHits {
+    width: 46%;
+    border: 1px solid rgba(19, 143, 116, 0.5);
+    margin: 2%;
+    overflow: hidden;
+    padding: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.topKpi .leadsHits p {
+    font-size: 20px;
+    color: #758395;
+    display: block;
+    margin: 35px 0;
+    text-align: left;
+}
+
+.topKpi .tarText {
+    display: inline-block;
+}
+
+.topKpi .leadsHits .leadsSpeText {
+    color: #13cea4;
+}

@@ -1,0 +1,697 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+center,
+u,
+b,
+i {
+   margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+
+
+:focus {
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    height: 0px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+    text-decoration: none;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    resize: none;
+    *font-size: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #FFF;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+}
+body,html{
+font-size: 10px;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *+height: 1%;
+}
+
+
+/*页面开头部分*/
+
+.topKpi {
+    background: url(../../images/pat.png);
+    padding: 8em;
+    color: #fff;
+    text-align: center;
+    height: auto;
+   
+}
+
+
+.topKpi .titleFirst {
+    font-size: 4em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+}
+
+.topKpi .titleSecond {
+    font-size: 2.4em;
+    opacity: 0.7;
+    padding: 0.6em 0 1em 0.1em;
+}
+
+
+.topKpi .targetCompletion {
+    max-width: 960px;
+    height:13em;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.topKpi .targetHits {
+    border: 1px solid rgba(31, 108, 150, 0.5);
+    width: 43.5%;
+    float: left;
+    margin:2%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-left: 4.5%;
+    
+}
+.topKpi .tarText{
+    font-size: 2em;
+    color: #758395;
+    display: block;
+     text-align: left;
+    margin: 1.5em 0;
+    line-height: 2.4em;
+}
+
+.topKpi .targetHits p {
+    line-height: 2.4em;
+    color: #758395;
+    display: block;
+}
+/*查看详情*/
+.topKpi span.checkDetails {
+    display: inline-block;
+    width: 61px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -30px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.topKpi .targetCan {
+    width: 148px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+}
+
+.topKpi .leadsCan {
+     width: 148px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin-right: 15px
+}
+
+.topKpi .targetHits .tarSpeText {
+    color: #2cabed;
+}
+
+.topKpi .leadsHits {
+    width: 43.5%;
+    border: 1px solid rgba(19, 143, 116, 0.5);
+    float: left;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-left: 1.7%;
+}
+
+.topKpi .leadsHits p {
+     font-size: 20px;
+     color: #758395;
+     display: block;
+}
+
+.topKpi .leadsHits .leadsSpeText {
+    color: #13cea4;
+}
+
+
+/*横线*/
+
+.line {
+    width: 100%;
+    height: 4px;
+    float: left;
+    background: #203045 url(../../images/triangle.png) repeat-x;
+}
+/*主要内容块*/
+.kpiMain {
+    max-width: 960px;
+    min-height: 100%;
+    padding: 2em;
+    padding-bottom: 6em;
+    padding-left: 6em;
+    display: block;
+    margin: 0 auto;
+}
+
+.kpiMain .targetTotality {
+    position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em;
+}
+
+.kpiMain .tarTotaText {
+    text-align: left;
+    font-size: 2em;
+    color: #203045;
+    font-weight: 600;
+    padding-left: 10px;
+    border-left: 0.6em solid #161f2a;
+    margin-bottom: 0.9em;
+    margin-top: 1em;
+    line-height: 1.5;
+}
+
+.kpiMain .radio {
+    width: 100%;
+    overflow: hidden;
+}
+.kpiMain .radioText{
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #2b2b2b;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.kpiMain .radioText input{
+   margin-top: 4px;
+   margin-right: 5px;
+}
+
+.kpiMain .clickHidden {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    padding-top: 6px;
+    background: #f5f5f5;
+}
+/*点击分推广方式*/
+.kpiMain .targetPopularize {
+    position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom:3em;
+}
+.kpiMain .targetChannele{
+    position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em;
+}
+.kpiMain .targetBusiness{
+   position: relative;
+    width: 95%;
+    min-height: 300px;
+    padding-bottom: 3em;
+}
+.kpiMain .leadsTotality{
+   position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em;
+}
+.kpiMain .leadsPopularize{
+    position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em;
+}
+.kpiMain .leadsInside{
+  position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em; 
+}
+.kpiMain .leadsExternal{
+  position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em; 
+}
+.kpiMain .leadsBusiness{
+   position: relative;
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 3em; 
+}
+
+.kpiMain .tarPopuSortYear {
+    width: 310px;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    color: #333333;
+    font-size: 13px;
+}
+
+.kpiMain .tarText {
+    width: 890px;
+    padding: 10px 10px 0 10px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    background: #4e698a;
+    clear: both;
+}
+.kpiMain .tarTextInfor{
+    /*height: 48px;*/
+    overflow: hidden; 
+}
+.kpiMain .moreBtn .packUp{
+  background-position: 0 0; 
+}
+
+
+
+
+.kpiMain .tarTextInfor p{
+   display: inline-block;
+   text-indent: 2em;
+}
+/*更多按钮*/
+.kpiMain .moreBtn{
+  height: 24px;
+}
+
+.kpiMain .tarMoreBtn{
+  display: block;
+    width: 55px;
+    height: 24px;
+    padding-left: 10px;
+    background: #a0bfe4;
+    color: #4e698a;
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    cursor: pointer;
+}
+.kpiMain .tarMoreBtn i{
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    background: url(../../images/i_triangle.jpg) no-repeat 0 -11px;
+}
+
+/*需要添加的class*/
+ .infHeight {
+    height: auto; }
+.packUp {
+    background-position: 0 0;}
+
+
+.kpiMain .detInformation {
+    /*position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 620px;
+    height: 143px;
+    margin-left: -310px;
+    /* margin-top: -71.5px; */
+    /*background-color: #fff;*/
+      display: none;
+    /*border: 1px solid #000;*/
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 85px;
+}
+
+.kpiMain .inforQuarClass {
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    width: 620px;
+    height: 350px;
+    margin-left: -310px;
+    margin-top: -175px;
+    border: 1px #CCCCCC solid;
+}
+
+/*.kpiMain .inforYearClass {
+    border: 1px #CCCCCC solid;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 230px;
+    margin-left: -275px;
+    margin-top: -115px;
+}
+*/
+.kpiMain .inforMouthClass {
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    width: 900px;
+    height: 143px;
+    margin-left: -450px;
+    margin-top: -71.5px;
+}
+
+.kpiMain .tarTotalInformation {
+    position: absolute;
+    right: 20px;
+    top: 125px;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #4e698a;
+    color: #fff;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: center;
+    border: 0;
+    text-decoration: none;
+}
+
+.table {
+    margin: 0px auto;
+    text-align: center;
+    background-color: #E5F1F4;
+    width: 96%;
+}
+
+.table td {
+    border: 1px solid #328AA4;
+    line-height: 15px;
+    text-align: center;
+    padding: 5px;
+    color: #333333;
+    line-height: 15px;
+}
+
+.kpiMain .table .firstTableTr td {
+    background-color: #328AA4;
+    color: #FFFFFF;
+}
+.layerTitle{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px auto 10px auto;
+    color: #328aa4;
+    font-weight: bold;
+}
+.layerExit{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  font-size: 20px;
+  color: #333333;
+}
+.p {
+    display: none;
+}
+
+.page-num {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+}
+
+.page-num a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    color: #328aa4;
+    line-height: 10px;
+}
+
+.page-num a:hover {
+    text-decoration: underline;
+}
+
+
+/*分页显示第一页*/
+
+.p_1 {
+    display: table-row;
+}
+
+.tarPopuSortYear .sortItem {
+    display: block;
+    position: relative;
+    width: 270px;
+    overflow: hidden;
+    height: 25px;
+    padding-left: 35px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.tarPopuSortYear .sortItem .sortColor_block1 {
+    background: #62B5DE;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tarPopuSortYear .sortItem .sortColor_block2 {
+    background: #8FB671;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tarPopuSortYear .sortItem .sortColor_block3 {
+    background: #EFC17E;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tarPopuSortYear .sortItem .sortColor_block4 {
+    background: #FE9C72;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tarPopuSortYear .sortItem .sortColor_block5 {
+    background: #d87a80;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.MoreBut {
+    display: block;
+    width: 64px;
+    height: 24px;
+    padding-left: 10px;
+    background: #a0bfe4;
+    color: #4e698a;
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    cursor: pointer;
+}
